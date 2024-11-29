@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html"><img src="logo.png" alt="Logo"></a>
+            <input type="search" placeholder="Søk...">
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="product.html">Produkter</a></li>
+                <li><a href="index.html#categories">Kategorier</a></li>
+                <li><a href="index.html#contact">Kontakt Oss</a></li>
+            </ul>
+            <a href="checkout.html"><img src="bilder/cart-icon.png" alt="Handlekurv"></a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="shopping-bag">
+            <h2>Handlekurv</h2>
+            <article>
+                <img src="bilder/hvitgenser.jpg" alt="Produkt 1">
+                <p>Produkt 1 - 199,99 NOK</p>
+                <p>Størrelse: Medium</p>
+                <p>Antall: 1</p>
+            </article>
+            <article>
+                <img src="bilder/brungenser.jpg" alt="Produkt 2">
+                <p>Produkt 2 - 299,99 NOK</p>
+                <p>Størrelse: Large</p>
+                <p>Antall: 1</p>
+            </article>
+        </section>
+
+        <section id="personal-info">
+            <h3>Personopplysninger</h3>
+            <form>
+                <label for="fname">Fornavn:</label>
+                <input type="text" id="fname" name="fname">
+                <label for="lname">Etternavn:</label>
+                <input type="text" id="lname" name="lname">
+                <label for="address">Gateadresse:</label>
+                <input type="text" id="address" name="address">
+                <label for="zipcode">Postnummer:</label>
+                <input type="text" id="zipcode" name="zipcode">
+                <label for="city">Poststed:</label>
+                <input type="text" id="city" name="city">
+                <button type="submit">Lagre</button>
+                <button type="button">Avbryt</button>
+            </form>
+        </section>
+
+        <section id="delivery">
+            <h3>Levering</h3>
+            <form>
+                <input type="radio" id="home" name="delivery" value="home">
+                <label for="home">Ekspresslevering hjem</label><br>
+                <input type="radio" id="pickup" name="delivery" value="pickup">
+                <label for="pickup">Ekspress pakke til utleveringssted</label><br>
+                <input type="radio" id="standard" name="delivery" value="standard">
+                <label for="standard">Standard hjemlevering</label><br>
+            </form>
+        </section>
+
+        <section id="payment">
+            <h3>Betaling</h3>
+            <form>
+                <label for="cardnumber">Kortnummer:</label>
+                <input type="text" id="cardnumber" name="cardnumber">
+                <label for="expiry">Utløpsdato:</label>
+                <input type="text" id="expiry" name="expiry">
+                <label for="cvc">CVC:</label>
+                <input type="text" id="cvc" name="cvc">
+                <button type="submit">Fullfør kjøp</button>
+            </form>
+        </section>
+
+        <footer>
+            <section>
+                <img src="logo-footer.png" alt="Logo">
+                <p>Slagord</p>
+            </section>
+            <section>
+                <h3>Kontakt</h3>
+                <p>Telefon: 123-456-7890</p>
+                <p>E-post: kontakt@eksempel.com</p>
+            </section>
+            <section>
+                <h3>Snarveier</h3>
+                <ul>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="product.html">Produkter</a></li>
+                    <li><a href="index.html#categories">Kategorier</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Følg oss</h3>
+                <a href="https://instagram.com">Instagram</a>
+                <a href="https://facebook.com">Facebook</a>
+                <a href="https://linkedin.com">LinkedIn</a>
+                <a href="https://pinterest.com">Pinterest</a>
+            </section>
+        </footer>
+    </main>
+</body>
+</html>
